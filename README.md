@@ -5,12 +5,15 @@ Exports the `Heap` class for use by other packages.
 
 ## Example Usage
 ```javascript
-let myHeap = new Heap();
+let myHeap = new Heap([10,20,30]);
+console.log(myHeap.size); // emits 3
+let max = myHeap.extractMax();
+console.log(myHeap.size); // emits 2
+console.log(myHeap.max); // emits 20 
 
 ```
 
 ## Running the Tests
-* Clone the repository.
 * `cd js-heap; npm test`
 
 # API
